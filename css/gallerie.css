@@ -1,0 +1,17 @@
+/* Galery */
+.work {
+	cursor: pointer;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.work-detail {
+	display: none;
+}
+
+.work-detail img {
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+}
+/* End Galery */

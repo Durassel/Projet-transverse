@@ -1,0 +1,75 @@
+# Do not remove this line or mod_rewrite rules and search engine friendly URLs will stop working
+RewriteBase /projet_transverse/
+RewriteEngine On
+
+RewriteRule ^index$	index.php
+
+RewriteRule ^theme$	theme.php
+RewriteRule ^theme-([0-9]+)$	theme.php?id=$1
+RewriteRule ^theme-p([0-9]+)$	theme.php?page=$1
+RewriteRule ^theme-([a-zA-Z0-9]+)$	theme.php?action=$1
+RewriteRule ^theme-([0-9]+)-([a-zA-Z0-9]+)$	theme.php?id=$1&action=$2
+
+RewriteRule ^cours$	cours.php
+RewriteRule ^cours-([0-9]+)$	cours.php?id=$1
+RewriteRule ^cours-([0-9]+)-([a-zA-Z0-9]+)$	cours.php?id=$1&action=$2
+
+RewriteRule ^chapitre-([0-9]+)$	chapitre.php?id=$1
+RewriteRule ^chapitre-([0-9]+)-([a-zA-Z0-9]+)$	chapitre.php?id=$1&action=$2
+
+RewriteRule ^quiz$	quiz.php
+RewriteRule ^quiz-([0-9]+)$	quiz.php?id=$1
+RewriteRule ^quiz-p([0-9]+)$	quiz.php?page=$1
+RewriteRule ^quiz-([a-zA-Z0-9]+)$	quiz.php?action=$1
+RewriteRule ^quiz-([0-9]+)-([a-zA-Z0-9]+)$	quiz.php?id=$1&action=$2
+RewriteRule ^quiz-([0-9]+)-([0-9]+)$	quiz.php?id=$1&question=$2
+
+RewriteRule ^question-([0-9]+)$	question.php?id=$1
+RewriteRule ^question-([0-9]+)-([a-zA-Z0-9]+)$	question.php?id=$1&action=$2
+
+RewriteRule ^reponse-([0-9]+)-([a-zA-Z0-9]+)$	reponse.php?id=$1&action=$2
+
+RewriteRule ^etablissement$	etablissement.php
+RewriteRule ^etablissement-([0-9]+)$	etablissement.php?id=$1
+RewriteRule ^etablissement-p([0-9]+)$	etablissement.php?page=$1
+RewriteRule ^etablissement-([a-zA-Z0-9]+)$	etablissement.php?action=$1
+RewriteRule ^etablissement-([0-9]+)-([a-zA-Z0-9]+)$	etablissement.php?id=$1&action=$2
+
+RewriteRule ^classe$	classe.php
+RewriteRule ^classe-([0-9]+)$	classe.php?id=$1
+RewriteRule ^classe-p([0-9]+)$	classe.php?page=$1
+RewriteRule ^classe-([a-zA-Z0-9]+)$	classe.php?action=$1
+RewriteRule ^classe-([0-9]+)-([a-zA-Z0-9]+)$	classe.php?id=$1&action=$2
+
+RewriteRule ^profil-([0-9]+)$	profil.php?id=$1
+
+RewriteRule ^parametres-([0-9]+)$	parametres.php?id=$1
+
+RewriteRule ^dashboard$	dashboard.php
+
+RewriteRule ^404$	404.php
+
+RewriteRule ^activation-([0-9]+)-([0-9]+)$	activation.php?id=$1&validationkey=$2
+
+RewriteRule ^connexion$	connexion.php
+
+RewriteRule ^deconnexion$		deconnexion.php
+
+RewriteRule ^inscription$		inscription.php
+
+RewriteRule ^niveau$	niveau.php
+RewriteRule ^niveau-([a-zA-Z0-9]+)$	niveau.php?action=$1
+RewriteRule ^niveau-([0-9]+)-([a-zA-Z0-9]+)$	niveau.php?id=$1&action=$2
+
+RewriteRule ^statut$	statut.php
+RewriteRule ^statut-([a-zA-Z0-9]+)$	statut.php?action=$1
+RewriteRule ^statut-([0-9]+)-([a-zA-Z0-9]+)$	statut.php?id=$1&action=$2
+
+RewriteRule ^parent-([0-9]+)-([a-zA-Z0-9]+)$	parent.php?id=$1&action=$2
+
+RewriteRule ^parrainage-([0-9]+)-([a-zA-Z0-9]+)$	parrainage.php?id=$1&action=$2
+
+RewriteRule ^resultat-([0-9]+)$	resultat.php?id=$1
+
+RewriteRule ^admission-([0-9]+)-([a-zA-Z0-9]+)$	admission.php?id=$1&action=$2
+RewriteRule ^admission-([0-9]+)-([0-9]+)-([a-zA-Z0-9]+)$	admission.php?id=$1&etablissement=$2&action=$3

@@ -1,0 +1,25 @@
+/* Miniature */
+.index-icon {
+	padding: 20px;
+	font-size: 75px;
+	color: #1c1c1c;
+}
+
+.miniature {
+	height: 200px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	display: table;
+}
+
+.miniature .thumbnail {
+	height: 200px;
+    width: inherit;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.miniature img {
+	max-height: 100%;
+}
+/* End Miniature */
