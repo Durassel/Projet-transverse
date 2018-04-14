@@ -105,8 +105,8 @@
       http://localhost/projet_transverse/activation.php?id=' . $result['idMax'] . '&validationkey=' . $randomString . '';
 
       $from_name = "Brain'squiz";
-      $mail->Username = "faabs.brain.squiz@gmail.com";  
-      $mail->Password = "azerty123456";           
+      $mail->Username = "";  
+      $mail->Password = "";           
 
       $mail->IsSMTP();
       $mail->Host = 'smtp.gmail.com';
